@@ -2,6 +2,10 @@ from django.shortcuts import render
 from .forms import *
 from django.contrib.auth import authenticate, login
 from django.http import HttpResponse
+from django.contrib.auth import get_user_model
+
+
+User = get_user_model()
 
 
 def user_login(request):
