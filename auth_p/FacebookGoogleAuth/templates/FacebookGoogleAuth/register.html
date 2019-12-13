@@ -7,13 +7,8 @@
   <form class="" action="." method="post">
     {{ user_form.as_p }}
     {% csrf_token %}
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">I'd like to receive PlacePass news and offers</label>
-        <br>
-        <label>By signing up, I agree to the PlacePass <a href="{% url 'terms' %}">Terms of Servce</a>
-          and <a href="{% url 'policy' %}">Privacy Policy</a>.</label>
-      </div>
+    <label>By signing up, I agree to the PlacePass <a href="{% url 'terms' %}">Terms of Servce</a>
+         and <a href="{% url 'policy' %}">Privacy Policy</a>.</label>
     <p><input type="submit" name="" value="Register"></p>
   </form>
   <h3>Already have an account?</h3>

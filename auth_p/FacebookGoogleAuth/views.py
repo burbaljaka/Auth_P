@@ -35,6 +35,7 @@ def register(request):
         if user_form.is_valid():
             new_user = user_form.save()
             new_user.set_password(user_form.cleaned_data['password'])
+
             new_user.save()
             return render(request, 'FacebookGoogleAuth/register_done.html', {'new_user': new_user})
     else:
