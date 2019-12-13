@@ -42,3 +42,10 @@ def register(request):
 
     return render(request, 'FacebookGoogleAuth/register.html', {'user_form': user_form})
 
+
+def terms(request):
+    return render(request, 'FacebookGoogleAuth/terms.html')
+
+
+def policy(request):
+    return render(request, 'FacebookGoogleAuth/policy.html')

@@ -19,7 +19,7 @@ class UserRegistrationForm(forms.ModelForm):
 
     class Meta:
         model = User
-        exclude = ['last_login', 'groups', 'user_permissions', 'username', 'is_staff', 'is_active', 'date_joined', 'is_superuser', 'password']
+        fields = ['first_name', 'last_name', 'email']
 
     def clean_password2(self):
         cd = self.cleaned_data
