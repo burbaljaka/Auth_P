@@ -41,7 +41,7 @@ class UserManager(BaseUserManager):
 class User(AbstractUser):
     email = models.EmailField(_('email address'), unique=True)
     username = None
-    is_subscribed = models.BooleanField()
+    is_subscribed = models.BooleanField(blank=True)
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []

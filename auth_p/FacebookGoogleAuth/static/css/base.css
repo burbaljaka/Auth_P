@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed&display=swap');
+
+.mycustom-jumbotron {
+    width: 25rem;
+    margin: 0 auto;
+    top: 20px;
+    background-color: #f8f9fa !important;
+    margin-top: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+input {
+   border: 1px solid #cccccc;
+   border-radius: 5px;
+   -webkit-border-radius: 3px; //закругление углов (Google Chrome)
+   background: #ffffff !important;
+   outline: none;
+   height: 32px;
+   color: #cccccc;
+   font-size: 14px;
+}
+
+body {
+ background-image: url("https://previews.123rf.com/images/sasha2538/sasha25381601/sasha2538160100028/51371657-cartoon-airplane-routes-airplane-path-seamless-pattern-background-vector-seamless-texture-can-be-use.jpg");
+ background-color: #cccccc;
+ background-repeat: no-repeat;
+ background-size: 100%;
+ font-family: 'Montserrat', sans-serif;
+}
+
+.sign {
+ font-size: 10pt;
+ color: #adb5bd;
+ text-align: left;
+}
+
+input {
+ width: 20rem;
+}
+
+input[type="checkbox"] {
+ width: 15px;
+ color: green;
+ height: 15px;
+}
+
+input[type=submit] {
+    font-weight:bold;
+    background:#2cb74c;
+    color:#fff;
+}
+
+input::placeholder {
+    color: #dee2e6;
+    padding-left: 5px
+}
+
+.social {
+    margin: 0 auto
+}
+
+.facebook {
+    color: #3B5998;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+.divide {
+    width: 0.75rem;
+}
+
+.google{
+    color: #729ae5;
+    font-weight: bold;
+}
+
+.fa {
+  padding: 0px;
+  font-size: 16px;
+  width: 5px;
+  text-align: center;
+  text-decoration: none;
+  margin:0 auto;
+}
+
+.fa-facebook {
+  background: #f8f9fa;
+  color: #3B5998;
+}
+
+.im-container {
+    width: 14px;
+    height: 14px;
+}
+
+/* resize images */
+.im-container img {
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.login {
+    align: right;
+    font-size: 16px;
+    text-align:top;
+    border-radius: 2px;
+    border: 1px solid #007bff;
+    padding: 5px;
+}
+
+a:hover {
+   text-decoration:none;
+}
+
+h6 {
+    display:table-cell;
+    vertical-align: bottom;
+}
+
+

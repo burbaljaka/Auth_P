@@ -16,7 +16,7 @@ class UserRegistrationForm(forms.ModelForm):
     email = forms.EmailField(label='', widget=forms.EmailInput(attrs={'placeholder': 'Email'}))
     password = forms.CharField(label='', widget=forms.PasswordInput(attrs={'placeholder': 'Password'}))
     password2 = forms.CharField(label='', widget=forms.PasswordInput(attrs={'placeholder': 'Confirm password'}))
-    is_subscribed = forms.BooleanField(label='', help_text="I'd like to receive PlacePass news and offers", widget=forms.CheckboxInput)
+    is_subscribed = forms.BooleanField(label='', help_text="I'd like to receive PlacePass news and offers", widget=forms.CheckboxInput, required=False)
 
     field_order = ['first_name', 'last_name', 'email', 'password', 'password2', 'is_subscribed']
 
