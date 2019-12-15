@@ -50,3 +50,6 @@ def terms(request):
 
 def policy(request):
     return render(request, 'FacebookGoogleAuth/policy.html')
+
+def welcome(request):
+    return render(request, 'FacebookGoogleAuth/welcome.html', context={'user': request.user})
